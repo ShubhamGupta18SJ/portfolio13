@@ -1,0 +1,190 @@
+/* SJ For logo animation */
+
+/* .navbar-light .navbar-brand {
+    color: #e1adad !important;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.logo_html {
+    display: flex;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    background: #5e6ad2;
+    border-radius: 50%;
+    overflow: hidden;
+    color: white;
+    font-family: Roboto;
+}
+
+.logo_html::before {
+    content: counter(animat);
+    position: absolute;
+    inset: -10px 10px;
+    background: linear-gradient(115deg, #fff, #de0505ed);
+    transition: 0.5s;
+    animation: animat 4s linear infinite;
+}
+
+.logo_html:hover::before {
+    inset: -10px 0px;
+}
+
+@keyframes animat {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo_html::after {
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: linear-gradient(to left, #040404, #242424, #656565);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.Contant_SJ {
+    font-family: roboto;
+    position: absolute;
+    align-items: center;
+    font-size: 27px;
+    inset: 5px;
+    background: 6px solid #5e6ad2;
+    z-index: 4;
+    border-radius: 50%;
+    overflow: hidden;
+    font-weight: 500;
+    left: 25%;
+    color: rgb(255, 255, 255);
+}
+
+.Contant_SJ span {
+    position: absolute;
+    padding-left: 2%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    pointer-events: none;
+    margin: 7px;
+    color: #de0505ed;
+}
+
+
+/* END SJ Code end logo animation */
+
+/* Code of S.J, For animation img */
+
+.right-flex3 {
+    float: right;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    /* background: rgb(2, 0, 36); */
+    background: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.right-flex3::before {
+    content: '';
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, #fff, #de0505ed);
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.right-flex3:hover::before {
+    inset: -20px 0px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+}
+
+.right-flex3::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    /* background: linear-gradient(to right, #040404, #242424, #656565); */
+    background: transparent;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle-img {
+    position: absolute;
+    /* width: 100%; */
+    /* height: 100%; */
+    inset: 30px;
+    background: 6px solid #5e6ad2;
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    /* transition: 0.5s; */
+    pointer-events: none;
+}
+
+
+/* text on Home Page..... */
+
+.typing-container {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+.typing {
+    display: inline-block;
+    font-size: 2em;
+}
+
+
+/* Typing Effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* Blinking Cursor Effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+
+/* Code End.. SJ/* Code of S.J, For animation img */

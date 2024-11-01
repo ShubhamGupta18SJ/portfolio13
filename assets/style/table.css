@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url(./assets/img/about_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-btn {
+    padding: 12px 27px;
+    background-color: #5e6ad2;
+    border-radius: 5px;
+    color: #000;
+    border: 1px solid transparent;
+    transition: all 1s;
+    text-transform: capitalize;
+}
+
+.bg-btn:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.project-container .table {
+    background-color: transparent !important;
+    --bs-table-color: white !important;
+    --bs-table-bg: transparent !important;
+    --bs-table-hover-bg: rgba(105, 104, 104, 0.082) !important;
+    border-color: rgb(77, 75, 75) !important;
+    --bs-table-hover-color: #5e6ad2;
+    --bs-table-active-color: #de0505ed;
+}
